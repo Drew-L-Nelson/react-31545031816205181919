@@ -5,7 +5,9 @@ import { Routes, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
+    <Switch>
       <Header />
+    </Switch>
   );
 };
 
