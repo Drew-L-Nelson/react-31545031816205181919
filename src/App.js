@@ -1,13 +1,19 @@
 import React from "react";
 import "./style.css";
-import Header from './components/Header'
+import Header from './components/Header';
+import Book from './pages/Book';
 import { Routes, Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
-    <Switch>
-      <Header />
-    </Switch>
+    <div>
+      <React.Fragment>
+          <Header />
+      </React.Fragment>
+      <Routes>
+        <Route path="/book" element={<Book/>} />
+      </Routes>
+    </div>
   );
 };
 

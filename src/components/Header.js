@@ -13,8 +13,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const pages = ['BOOK', 'CHARACTERS', 'NEWSLETTER', 'OUR MISSION', 'SHOP'];
+const pages = ['book', 'characters', 'newsletter', 'our mission', 'shop'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -127,6 +128,10 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+
+          <IconButton>
+            <ShoppingCartIcon sx={ {padding: 2 } }/>
+          </IconButton>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
