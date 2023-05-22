@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,12 +15,24 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
+import { getImageUrl } from '../firebase-config.js';
+
 const pages = ['Book', 'Characters', 'Newsletter', 'Our Mission', 'Shop'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
+
+  useEffect(() => {
+    const fetchImageUrl = async () => {
+      const url = await getImageUrl();
+      setImageUrl(url);
+    };
+
+    fetchImageUrl();
+  }, []);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -42,6 +54,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {imageUrl && <img src={imageUrl} alt="Book Thumbnail" />}
           <Typography
             variant="h6"
             noWrap

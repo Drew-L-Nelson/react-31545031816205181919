@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from '@firebase/firestore';
-import { getStorage } from "firebase/storage";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,5 +23,14 @@ const analytics = getAnalytics(app);
 
 // Initialize Cloud Storage and get a reference to the service
 export const storage = getStorage(app);
+//export const imagesRef = ref(storage, 'CodeCraftersImages');
+//export const thumbnail = ref(storage, 'CodeCraftersImages/Codestone1.png')
+
+export const getImageUrl = async () => {
+  const storage = getStorage();
+  const imageRef = ref(storage, 'CodeCraftersImages/Codestone1.png');
+  const downloadURL = await getDownloadURL(imageRef);
+  return downloadURL;
+};
 
 export const db = getFirestore(app);
