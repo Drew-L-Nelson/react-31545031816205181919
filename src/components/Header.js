@@ -1,4 +1,4 @@
-import * as React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -53,8 +53,12 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          {imageUrl && <img src={imageUrl} alt="Book Thumbnail" />}
+          {imageUrl && 
+            <img 
+              src={imageUrl} alt="Book Thumbnail" 
+              sx={{ padding: 1 }}
+            /> 
+          }
           <Typography
             variant="h6"
             noWrap
@@ -62,6 +66,7 @@ function ResponsiveAppBar() {
             href="/"
             sx={{
               mr: 2,
+              paddingLeft: 1,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -118,6 +123,7 @@ function ResponsiveAppBar() {
             href=""
             sx={{
               mr: 2,
+              paddingLeft: 1,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontFamily: 'monospace',
