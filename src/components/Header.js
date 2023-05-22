@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const pages = ['book', 'characters', 'newsletter', 'our mission', 'shop'];
+const pages = ['Book', 'Characters', 'Newsletter', 'Our Mission', 'Shop'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -52,12 +52,13 @@ function ResponsiveAppBar() {
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontSize: 20,
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            CODE CRAFTERS
+            CODE CRAFTERS {/* desktop browser */}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -108,12 +109,13 @@ function ResponsiveAppBar() {
               flexGrow: 1,
               fontFamily: 'monospace',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontSize: 20,
+              letterSpacing: '.2rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            CODE CRAFTERS {/* mobile browser  */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -130,7 +132,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <IconButton>
-            <ShoppingCartIcon sx={ {padding: 2 } }/>
+            <ShoppingCartIcon sx={{padding: 2, color: 'white' }}/>
           </IconButton>
 
           <Box sx={{ flexGrow: 0 }}>
