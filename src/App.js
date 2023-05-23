@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Header from './components/Header';
+import Home from './pages/Home';
 import Book from './pages/Book';
 import Characters from './pages/Characters';
 import Newsletter from './pages/Newsletter';
@@ -15,6 +16,7 @@ const App = () => {
           <Header />
       </React.Fragment>
       <Routes>
+        <Route path="/" element={<Home/>} />
         <Route path="/Book" element={<Book/>} />
         <Route path="/Characters" element={<Characters/>} />
         <Route path="/Newsletter" element={<Newsletter/>} />
