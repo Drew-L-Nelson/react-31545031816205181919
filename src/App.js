@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div>
       <React.Fragment>
-          <Header />
+          <Header/>
       </React.Fragment>
       <Routes>
         <Route path="/" element={<Home/>} />

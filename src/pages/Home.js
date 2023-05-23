@@ -17,7 +17,6 @@ const Home = () => {
 
   return (
     <div>
-      <h1>THIS IS THE HOMEPAGE</h1>
       {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
     </div>
   );
