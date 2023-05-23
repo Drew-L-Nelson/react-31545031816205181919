@@ -21,14 +21,21 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-// Initialize Cloud Storage and get a reference to the service
+// Initialize Cloud Storage and get a reference to the service (all the images)
 export const storage = getStorage(app);
-//export const imagesRef = ref(storage, 'CodeCraftersImages');
-//export const thumbnail = ref(storage, 'CodeCraftersImages/Codestone1.png')
 
-export const getImageUrl = async () => {
+// 💎 Codestone thumbnail async fetch, used in Header.js
+export const getCodestoneThumbnailUrl = async () => {
   const storage = getStorage();
   const imageRef = ref(storage, 'CodeCraftersImages/Codestone1.png');
+  const downloadURL = await getDownloadURL(imageRef);
+  return downloadURL;
+};
+
+// 🏠 Homepage main image async fetch, used in Home.js
+export const getHomeImageUrl = async () => {
+  const storage = getStorage();
+  const imageRef = ref(storage, 'CodeCraftersImages/Landscape1.png');
   const downloadURL = await getDownloadURL(imageRef);
   return downloadURL;
 };

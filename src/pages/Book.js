@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 
-import { getImageUrl } from '../firebase-config.js'
+import { getCodestoneThumbnailUrl } from '../firebase-config.js'
 
 const Book = () => {
   const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
     const fetchImageUrl = async () => {
-      const url = await getImageUrl();
+      const url = await getCodestoneThumbnailUrl();
       setImageUrl(url);
     };
 

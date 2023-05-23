@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-import { getImageUrl } from '../firebase-config.js';
+import { getCodestoneThumbnailUrl } from '../firebase-config.js';
 
 const pages = ['Book', 'Characters', 'Newsletter', 'Our Mission', 'Shop'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -23,16 +23,19 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  // 🔥🔥 state and useEffect for fetching Codestone thumbnail from Firestorage 🔥🔥
   const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
     const fetchImageUrl = async () => {
-      const url = await getImageUrl();
+      const url = await getCodestoneThumbnailUrl();
       setImageUrl(url);
     };
 
     fetchImageUrl();
   }, []);
+  // end Firestorage fetch
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
