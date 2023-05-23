@@ -55,7 +55,7 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl" className='overlay'>
+      <Container maxWidth="1" sx={{ width: 1 }} className='overlay'>
       <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <a href='/'>
           {imageUrl && 
