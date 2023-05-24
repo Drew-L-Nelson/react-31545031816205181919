@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/Home.css';
+// import '../styles/Home.css';
+import '../styles/HomeTest.css';
 
 import { getHomeImageUrl } from '../firebase-config.js'
 
@@ -16,8 +17,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
+    <div className='main-image-container'>
+      <div className='image-overlay'>
+        {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
+      </div>
     </div>
   );
 };

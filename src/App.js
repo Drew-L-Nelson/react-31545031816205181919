@@ -8,7 +8,7 @@ import Characters from './pages/Characters';
 import Newsletter from './pages/Newsletter';
 import OurMission from './pages/OurMission';
 import Shop from './pages/Shop';
-import { Routes, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
   return (
