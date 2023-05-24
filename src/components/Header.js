@@ -36,7 +36,7 @@ function ResponsiveAppBar() {
 
     fetchImageUrl();
   }, []);
-  // end Firestorage fetch
+  // 🔥🔥 end Firestorage fetch
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);

@@ -7,7 +7,7 @@
   height: auto;
   z-index: -1;
   object-fit: cover;
-} 
+}
 
 .overlay {
   position: absolute;
@@ -68,8 +68,6 @@ Old code Chat gave me
   animation: zoomOut 2s ease-out forwards;
 } */
 
-
-
 /* .image-div-for-overlay {
   z-index: 0;
   background-color: black;
@@ -91,7 +89,6 @@ Old code Chat gave me
       background-color: black;
   }
 } */
-
 
 /* @keyframes fadeInImage {
   0% {
