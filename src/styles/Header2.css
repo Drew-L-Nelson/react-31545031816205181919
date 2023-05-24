@@ -1,0 +1,119 @@
+/* Home.css */
+
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  z-index: 999;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  height: 64px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 16px;
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 16px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.desktop-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  margin-right: 16px;
+}
+
+.cart-icon {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.cart-icon i {
+  font-size: 24px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.avatar img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.user-settings {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-settings li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.user-settings li:hover {
+  background-color: #f5f5f5;
+}

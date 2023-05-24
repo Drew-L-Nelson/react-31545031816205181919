@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Home.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -54,14 +55,17 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+      <Container maxWidth="1" className='overlay'>
+      <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
+          <a href='/'>
           {imageUrl && 
             <img 
+              href='/'
               src={imageUrl} alt="Book Thumbnail" 
               sx={{ padding: 1 }}
             /> 
           }
+          </a>
           <Typography
             variant="h6"
             noWrap
@@ -79,7 +83,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            CODE CRAFTERS {/* desktop browser */}
+            {/* CODE CRAFTERS desktop browser */}
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -123,12 +127,12 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               paddingLeft: 1,
@@ -142,7 +146,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            CODE CRAFTERS {/* mobile browser  */}
+            {/* CODE CRAFTERS mobile browser (This is text that we can choose to display) */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

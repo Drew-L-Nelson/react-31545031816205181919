@@ -35,7 +35,7 @@ export const getCodestoneThumbnailUrl = async () => {
 // 🏠 Homepage main image async fetch, used in Home.js
 export const getHomeImageUrl = async () => {
   const storage = getStorage();
-  const imageRef = ref(storage, 'CodeCraftersImages/Landscape1.png');
+  const imageRef = ref(storage, 'CodeCraftersImages/Starmap2.JPG');
   const downloadURL = await getDownloadURL(imageRef);
   return downloadURL;
 };

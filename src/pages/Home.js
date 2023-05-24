@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/Home.css';
 
 import { getHomeImageUrl } from '../firebase-config.js'
 
-const Book = () => {
+const Home = () => {
   const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
@@ -16,10 +17,9 @@ const Book = () => {
 
   return (
     <div>
-      <h1>THIS IS THE HOMEPAGE</h1>
-      {imageUrl && <img src={imageUrl} alt="Book Thumbnail" />}
+      {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
     </div>
   );
 };
 
-export default Book;
+export default Home;
