@@ -126,7 +126,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-
+          
           <Typography
             variant="h5"
             noWrap
@@ -145,7 +145,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-          
+          {/* CODE CRAFTERS mobile browser (This is text that we can choose to display) */}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
