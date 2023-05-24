@@ -1,4 +1,4 @@
-.main-image {
+/* .main-image {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7,9 +7,9 @@
   height: auto;
   z-index: -1;
   object-fit: cover;
-}
+} */
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,17 +19,17 @@
   opacity: 0;
   z-index: 2;
   animation: fadeInOverlay 1s 2s forwards;
-}
+} */
 
-.overlay a {
+/* .overlay a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   opacity: 0;
   animation: fadeInLinks 1s 2s forwards;
-}
+} */
 
-@keyframes fadeInOverlay {
+/* @keyframes fadeInOverlay {
   0% {
     opacity: 0;
   }
@@ -45,7 +45,7 @@
   100% {
     opacity: 1;
   }
-}
+} */
 
 /* 
 Old code Chat gave me

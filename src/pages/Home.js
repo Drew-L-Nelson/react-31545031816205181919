@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../styles/HomeOld.css';
+import '../styles/Home.css';
 
 import { getHomeImageUrl } from '../firebase-config.js'
 
