@@ -17,7 +17,7 @@ const App = () => {
           <Header/>
       </React.Fragment>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path='/' element={<Home />} />
         <Route path="/Book" element={<Book/>} />
         <Route path="/Characters" element={<Characters/>} />
         <Route path="/Newsletter" element={<Newsletter/>} />
