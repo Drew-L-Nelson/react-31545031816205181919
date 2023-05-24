@@ -16,9 +16,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
-    </div>
+      <div className='image-overlay'>
+        {imageUrl && <img src={imageUrl} className='main-image' alt="HomeImage" />}
+      </div>
   );
 };
 

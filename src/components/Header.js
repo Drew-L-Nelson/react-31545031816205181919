@@ -13,7 +13,6 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import { getCodestoneThumbnailUrl } from '../firebase-config.js';
@@ -36,7 +35,7 @@ function ResponsiveAppBar() {
 
     fetchImageUrl();
   }, []);
-  // end Firestorage fetch
+  // 🔥🔥 end Firestorage fetch
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -127,7 +126,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
+
           <Typography
             variant="h5"
             noWrap
@@ -146,7 +145,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            {/* CODE CRAFTERS mobile browser (This is text that we can choose to display) */}
+          
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
