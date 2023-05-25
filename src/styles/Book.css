@@ -1,0 +1,10 @@
+.background-map-image {
+  /* position: relative;
+  width: 100%;
+  height: auto; */
+  z-index: -1;
+}
+
+.image_map {
+  z-index: 1;
+}
