@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import Header from './components/Header';
-import Header2 from './components/Header2';
 import Home from './pages/Home';
 import Book from './pages/Book';
 import Characters from './pages/Characters';
@@ -29,12 +28,3 @@ const App = () => {
 };
 
 export default App;
-
-
-{/* <Route exact path="/" component={AboutPage} />
-<Route path="/characters" component={CharactersPage} />
-<Route path="/book" component={BookPage} />
-<Route path="/newsletter" component={NewsletterPage} />
-<Route path="/contact" component={ContactPage} />
-<Route path="/our-mission" component={OurMissionPage} />
-<Route path="/shop" component={ShopPage} /> */}
