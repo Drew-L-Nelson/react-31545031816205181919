@@ -17,7 +17,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 import { getCodestoneThumbnailUrl } from '../firebase-config.js';
 
-const pages = ['Book', 'Characters', 'Newsletter', 'Our Mission', 'Shop'];
+const pages = ['Book', 'Characters', 'Newsletter', 'About', 'Shop'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
