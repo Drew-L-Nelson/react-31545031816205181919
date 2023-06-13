@@ -41,4 +41,11 @@ export const getHomeImageUrl = async () => {
   return downloadURL;
 };
 
+export const getAboutImageUrl = async () => {
+  const storage = getStorage();
+  const imageRef = ref(storage, 'CodeCraftersImages/Landscape2.JPG');
+  const downloadURL = await getDownloadURL(imageRef);
+  return downloadURL;
+};
+
 export const db = getFirestore(app);
