@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-//import { getAnalytics } from "firebase/analytics";
+import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from '@firebase/firestore';
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -19,7 +19,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-//const analytics = getAnalytics(app);
+const analytics = getAnalytics(app);
 
 
 // Initialize Cloud Storage and get a reference to the service (all the images)

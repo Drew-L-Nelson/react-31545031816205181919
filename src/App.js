@@ -8,10 +8,11 @@ import Newsletter from './pages/Newsletter';
 import About from './pages/About';
 import Shop from './pages/Shop';
 import { Routes, Route } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const App = () => {
   return (
-    <div>
+    <ParallaxProvider>
       <React.Fragment>
           <Header/>
       </React.Fragment>
@@ -23,7 +24,7 @@ const App = () => {
         <Route path="/About" element={<About/>} />
         <Route path="/Shop" element={<Shop/>} />
       </Routes>
-    </div>
+    </ParallaxProvider>
   );
 };
 
