@@ -35,12 +35,15 @@ const About = () => {
               </div>
             ),
           },
+          {
+            children: <AboutTextBlock />
+          }
         ]}
         className="aspect-[2/1]"
       >
 
-        <ParallaxBannerLayer offset={1} speed={-10}> 
-          <AboutTextBlock />
+        <ParallaxBannerLayer speed={-10}> 
+          {/* <AboutTextBlock /> */}
         </ParallaxBannerLayer>
         
       </ParallaxBanner>
