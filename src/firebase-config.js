@@ -41,9 +41,10 @@ export const getHomeImageUrl = async () => {
   return downloadURL;
 };
 
+// About page main image async fetch
 export const getAboutImageUrl = async () => {
   const storage = getStorage();
-  const imageRef = ref(storage, 'CodeCraftersImages/Landscape2.JPG');
+  const imageRef = ref(storage, 'CodeCraftersImages/Landscape2.jpg');
   const downloadURL = await getDownloadURL(imageRef);
   return downloadURL;
 };
