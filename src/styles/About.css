@@ -1,0 +1,25 @@
+/* .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+} */
+
+.main-about-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.headline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

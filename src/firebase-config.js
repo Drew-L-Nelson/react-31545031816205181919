@@ -21,6 +21,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+
 // Initialize Cloud Storage and get a reference to the service (all the images)
 export const storage = getStorage(app);
 
@@ -36,6 +37,14 @@ export const getCodestoneThumbnailUrl = async () => {
 export const getHomeImageUrl = async () => {
   const storage = getStorage();
   const imageRef = ref(storage, 'CodeCraftersImages/Starmap2.JPG');
+  const downloadURL = await getDownloadURL(imageRef);
+  return downloadURL;
+};
+
+// About page main image async fetch
+export const getAboutImageUrl = async () => {
+  const storage = getStorage();
+  const imageRef = ref(storage, 'CodeCraftersImages/Landscape2.jpg');
   const downloadURL = await getDownloadURL(imageRef);
   return downloadURL;
 };

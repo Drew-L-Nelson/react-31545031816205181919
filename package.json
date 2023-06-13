@@ -5,17 +5,20 @@
   "dependencies": {
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
-    "@firebase/app": "0.x",
+    "@firebase/analytics": "^0.10.0",
+    "@firebase/app": "latest",
     "@firebase/firestore": "^3.12.0",
+    "@firebase/storage": "^0.11.2",
     "@mui/icons-material": "5.11.16",
     "@mui/material": "5.13.2",
     "@types/react": "18.2.6",
-    "firebase": "9.22.0",
+    "firebase": "latest",
     "firestore": "1.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router": "6.11.2",
-    "react-router-dom": "6.11.2"
+    "react-router-dom": "6.11.2",
+    "react-scroll-parallax": "^3.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
