@@ -1,0 +1,17 @@
+.textblock {
+  background-color: #210002;
+  height: 100vh;
+}
+
+.textblock-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+/* .textblock-content {
+  position: fixed;
+  width: 100%;
+  margin: 5%;
+  padding-top: 70px;
+} */

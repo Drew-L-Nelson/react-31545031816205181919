@@ -1,10 +1,9 @@
-/* .image-overlay {
+.image-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-} */
+}
 
 .main-about-image {
   position: absolute;
@@ -15,7 +14,7 @@
 
 .headline {
   position: absolute;
-  top: 0;
+  top: 10%;
   right: 0;
   bottom: 0;
   left: 10%;
