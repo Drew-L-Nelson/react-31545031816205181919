@@ -1,4 +1,21 @@
-.image-overlay {
+.content {
+  height: 100vh;
+}
+
+.text-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px 15px;
+  transform: translate(-50%, -50%);
+  background: gray;
+  color: white;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+
+/* .image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,4 +38,4 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
+} */
