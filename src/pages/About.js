@@ -23,8 +23,8 @@ const About = () => {
   }, []);
 
   return (
-    <div>
-      <Parallax strength={400} bgImage={imageUrl}>
+    <div className="main-about-div">
+      <Parallax strength={300} bgImage={imageUrl}>
         <div className="content">
           <div className="text-content">Normal Parallax</div>
         </div>
